@@ -1,0 +1,173 @@
+---
+title: "Science des données I : module 2"
+shorttitle: "Beamer Slides"
+subtitle: "Travaux pratiques \\break \\vfill \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/EcoNum-logo.pdf} \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/biodatascience.png} \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/SciViews-logo.pdf}"
+author: "Guyliann Engels & Philippe Grosjean"
+institute: "Université de Mons, Belgique\\break Laboratoire d'Écologie numérique des Milieux aquatiques\\break <\\url{http://biodatascience-course.sciviews.org/}> \\break <\\url{Guyliann.Engels@umons.ac.be}><\\url{Philippe.Grosjean@umons.ac.be}>"
+date: ""
+fontfamily: mathpazo
+fontsize: 9pt
+output: 
+  html_document: 
+    fig_caption: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+SciViews::R
+ub <- read("urchin_bio", package = "data.io")
+is <- read("iris", package = "datasets")
+```
+
+### Découverte du logiciel R
+
+![]("../../image/sdd1_02_a")
+
+___
+
+
+![]("../../image/sdd1_02_b")
+
+
+___
+
+
+![]("../../image/sdd1_02_c")
+
+
+___
+
+![]("../../image/sdd1_02_d")
+
+Insérez les instructions suivantes dans la console R
+
+```{r, eval = FALSE}
+BioDataScience::run("02a_r_decouverte")
+```
+
+### Réalisation de nuage de points
+
+\begincols
+\begincol{.64\textwidth}
+
+```{r, fig.align="center", echo = FALSE, warning=FALSE, message=FALSE}
+chart(ub,formula = height ~  weight) + 
+  geom_point() +
+  labs( x = "Label de l'axe x  + [Unité]", 
+        y = "Label de l'axe y + [Unité]") +
+  theme(axis.text.x = element_text(colour = "#a80039", size = 15), 
+        axis.title.x = element_text(colour = "#029687", size = 15), 
+        axis.text.y = element_text(colour = "#a80039", size = 15), 
+        axis.title.y = element_text(colour = "#029687", size = 15),
+        axis.line.x = element_line(colour = "#a80039"),
+        axis.line.y = element_line(colour = "#a80039"),
+        )
+```
+
+\endcol
+\begincol{.32\textwidth}
+
+**Les éléments indispensables : **
+
+\vfill
+
+- Les axes avec les graduations (en rouge)
+- les labels et les unités des axes (en bleu)
+
+
+
+\endcol
+\endcols
+
+___
+
+```{r}
+chart(ub, formula = height ~ weight) +
+  geom_point()
+```
+
+### Utilisation de R Markdown
+
+**Markdown** : language très simples
+
+![](../../image/markdown-1-markup.png)
+
+___
+
+**R** : suite d'instructions
+
+![](../../image/rscript.png)
+
+___
+
+\begincols
+\begincol{.64\textwidth}
+
+![](../../image/rmd_example1.jpg)
+
+\endcol
+\begincol{.32\textwidth}
+
+**Description**
+
+\vfill
+
+\vfill
+
+\vfill
+
+
+- Préambule (Rouge)
+
+- Markdown (Bleu)
+
+- Chunks, R code (Vert)
+
+- Markdown (Bleu)
+
+- Chunks, R code (Vert)
+
+- Markdown (Bleu)
+
+\endcol
+\endcols
+
+### Comparaison de workflow 
+
+
+\begincols
+\begincol{.34\textwidth}
+
+**Excel - Word**
+
+\vfill
+
+\vfill
+
+
+![](../../image/Logo_Microsoft_Excel_2013.png){width="80"}
+
+![](../../image/Logo_Microsoft_Word_2013.png){width="80"}
+
+- biometry_2014_ew
+- biometry_2016_ew
+
+\endcol
+\begincol{.32\textwidth}
+
+**R Markdown**
+
+\vfill
+
+\vfill
+
+
+![](../../image/rmarkdown.png){width="100"}
+
+- biometry_2014
+- biometry_2016
+
+\endcol
+\endcols
+
+Quel format d'analyse vous semble le plus approprié dans la recherche scientifique et collaborative ? 
