@@ -1,0 +1,65 @@
+---
+title: "Science des données I : module 1"
+shorttitle: "Beamer Slides"
+subtitle: "Découverte du language Markdown \\vfill \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/EcoNum-logo.pdf} \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/biodatascience.png} \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/SciViews-logo.pdf}"
+author: "Guyliann Engels & Philippe Grosjean"
+institute: "Université de Mons, Belgique\\break Laboratoire d'Écologie numérique des Milieux aquatiques\\break <\\url{http://biodatascience-course.sciviews.org/}> \\break <\\url{Guyliann.Engels@umons.ac.be}><\\url{Philippe.Grosjean@umons.ac.be}>"
+date: ""
+fontfamily: mathpazo
+fontsize: 9pt
+output: 
+  html_document: 
+    fig_caption: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+SciViews::R
+```
+
+### Découverte du markdown
+
+![](../../image/sdd1_01/rstudio.png)
+
+___
+
+- Créez un nouveau document `File -> New File -> Text File`
+
+- Enregistrez ce document dans `shared -> projects` 
+
+- Nommez le `markdown.md`
+
+___
+
+- Ajoutez le titre principal 
+    +  Ecrivez : Découverte du language Markdown
+
+___
+
+- Ajoutez le titre secondaire secondaire
+    +  Ecrivez : Nom et prénom 
+
+___
+
+
+- Ajoutez un titre de niveau plus bas 
+    +  Ecrivez : *Seriatopora hystrix* Dana (1846)
+
+Attention, respectez la mise en italique 
+
+___
+
+- Ajoutez l'équation scientifique ci-dessous dans votre document
+
+$$E = MC^2$$
+
+- Ajoutez un tableau comprennant les avantages et inconvénients du language markdown
+
+
+___
+
+**Astuces**
+
+- `EqualX` permet d'écrire facilement des équations complexes qu'il suffit de copier-coller dans le document markdown/
+
+- `Table Editor` permet d'écrire facilement des tableau en markdown. 
