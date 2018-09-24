@@ -1,16 +1,15 @@
 ---
-title: "Science des données I : module 1"
-shorttitle: "Beamer Slides"
-subtitle: "Découverte du language Markdown \\vfill \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/EcoNum-logo.pdf} \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/biodatascience.png} \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{../template/SciViews-logo.pdf}"
-author: "Guyliann Engels & Philippe Grosjean"
-institute: "Université de Mons, Belgique\\break Laboratoire d'Écologie numérique des Milieux aquatiques\\break <\\url{http://biodatascience-course.sciviews.org/}> \\break <\\url{Guyliann.Engels@umons.ac.be}><\\url{Philippe.Grosjean@umons.ac.be}>"
-date: ""
+title: 'Science des données I : module 1'
+subtitle:  \includegraphics[width=.08\textwidth,height=.1\textheight]{../template/biodatascience.png}
+  \includegraphics[width=.08\textwidth,height=.1\textheight]{../template/SciViews-logo.pdf} \vfill Découverte de Rstudio et du language Markdown
+author: Philippe Grosjean & Guyliann Engels
+institute: Université de Mons, Belgique\break Laboratoire d'Écologie numérique des Milieux aquatiques\break \includegraphics[width=.08\textwidth,height=.1\textheight]{../template/EcoNum-logo.pdf} \break \url{http://biodatascience-course.sciviews.org} \break \url{Philippe.Grosjean@umons.ac.be}, \url{Guyliann.Engels@umons.ac.be}
+date: ''
 fontfamily: mathpazo
 fontsize: 9pt
-output: 
-  html_document: 
-    fig_caption: yes
 ---
+
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

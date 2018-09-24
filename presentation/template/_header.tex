@@ -32,7 +32,7 @@
 {
   \usepackage{beamerbasearticle}
   \usepackage{fullpage}
-  \pdfimageresolution 72
+  \pdfimageresolution 96
 }
 \mode<beamer>
 {
@@ -141,6 +141,14 @@ height=1.07\paperheight]{../template/background-hex.jpg}}
 \usepackage{textpos}
 \newcommand{\putabs}[3]{\begin{textblock*}{10mm}[0,0](#1,#2){#3}\end{textblock*}}
 
+% Commands useful to place columns in the slides
+\newcommand{\columnsbegin}{\begin{columns}}
+\newcommand{\columnsend}{\end{columns}}
+\newcommand{\columnhalf}{\column{.5\textwidth}}
+\newcommand{\columnlarge}{\column{.66\textwidth}}
+\newcommand{\columnsmall}{\column{.33\textwidth}}
+\newcommand{\columnverylarge}{\column{.75\textwidth}}
+\newcommand{\columnverysmall}{\column{.25\textwidth}}
 
 % Copyright notices and sources:
 % The background picture: http://www.uberpiglet.com/vectors/20-amazing-vector-backgrounds/
@@ -181,10 +189,13 @@ height=1.07\paperheight]{../template/background-hex.jpg}}
 \usepackage{wasysym}
 %\usepackage{amsmath}
 
-% TODO: redefine colors for syntax highlighting!
+% Redefine colors for links
+\hypersetup{colorlinks=true,urlcolor=umons-red,linkcolor=umons-red,% link color controls section, subsection, and title
+citecolor = umons-red, anchorcolor = umons-red}
+% We do not want to change link colors in infolines
+\addtobeamertemplate{headline}{\hypersetup{allcolors=.}}{}
+\addtobeamertemplate{footline}{\hypersetup{allcolors=.}}{}
 
-% Tricks for two-columns sections
-\def\begincols{\begin{columns}}
-\def\begincol{\begin{column}}
-\def\endcol{\end{column}}
-\def\endcols{\end{columns}}
+% Do not print slides with first level header
+\AtBeginSection[]{}
+
