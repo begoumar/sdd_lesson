@@ -9,6 +9,7 @@ Découvrez ce nouvel environnement de travail et répondez aux questionx suivant
 
 - Citez une application permettant d'écrire des équations mathématiques^[ vous devez allez dans l'onglet `Applications` puis `EqualX` ![](../image/sdd1_01/equalx.gif)]
 
+
 $$2H_2 + O_2 \xrightarrow{n,m}2H_2O$$
 
 
@@ -38,7 +39,7 @@ Employer l'application `Moussepad` pour écrire la la phrase suivante :
 
 - Déplacez le fichier `dossier_partage.txt` sur le bureau de la machine virtuelle.
 
-- Déplacez à nouveau ce fichierdans le dossier `shared` et le sous dossier `project`. Qu'observez vous ? ^[Le fichier ne s'est pas déplacé du bureau vers le dossier shared mais il a été copié.] 
+- Déplacez à nouveau ce fichier dans le dossier `shared` et le sous dossier `project`. Qu'observez vous ? ^[Le fichier ne s'est pas déplacé du bureau vers le dossier shared mais il a été copié.] 
 
 - Recherchez à nouveau votre fichier `dossier_partage.txt` dans votre ordinateur hôte et notez la position du fichier. ^[il se trouve dans le sous-dossier project et le dossier shared.]
 
