@@ -3,20 +3,20 @@
 
 Une fois votre machine virtuelle configurée, vous vous trouvez confronté à cet écran ressemblant à votre bureau d'ordinateur hôte. 
 
-![](../image/sdd1_01/desktop.png)
+![](../images/desktop.png)
 
 Découvrez ce nouvel environnement de travail et répondez aux questionx suivantes : 
 
-- Citez une application permettant d'écrire des équations mathématiques^[ vous devez allez dans l'onglet `Applications` puis `EqualX` ![](../image/sdd1_01/equalx.gif)]
+- Citez une application permettant d'écrire des équations mathématiques^[ vous devez allez dans l'onglet `Applications` puis `EqualX` ![](../images/equalx.gif)]
 
 
 $$2H_2 + O_2 \xrightarrow{n,m}2H_2O$$
 
 
-- Trouvez une application permettant d'écrire des charactères spéciaux^[vous devez aller dans l'onglet `Applications` puis l'onglet dans la menu `Accesoires`, pour sélectionner `Characters` ou `Character Map` ![](../image/sdd1_01/characters.gif)]
+- Trouvez une application permettant d'écrire des charactères spéciaux^[vous devez aller dans l'onglet `Applications` puis l'onglet dans la menu `Accesoires`, pour sélectionner `Characters` ou `Character Map` ![](../images/characters.gif)]
 
 
-- Trouvez une application permettant de visualiser l'occupation de l'espace sur le disque ^[vous devez aller dans l'onglet `Applications` puis l'onglet dans la menu `System`, pour sélectionner `Disk Usage Analizer` ![](../image/sdd1_01/disk.gif)]
+- Trouvez une application permettant de visualiser l'occupation de l'espace sur le disque ^[vous devez aller dans l'onglet `Applications` puis l'onglet dans la menu `System`, pour sélectionner `Disk Usage Analizer` ![](../images/disk.gif)]
 
 
 - Entrez dans le disque `box 2018a`

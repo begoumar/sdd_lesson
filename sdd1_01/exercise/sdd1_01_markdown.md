@@ -3,7 +3,7 @@
 
 Une fois votre machine virtuelle configurée, vous vous trouvez confronté à cet écran.
 
-![](../image/sdd1_01/rstudio.png)
+![](../images/rstudio.png)
 
 
 - Ajoutez le titre principal ^[Ajout d'une dièse devant le titre] 
@@ -13,6 +13,6 @@ Une fois votre machine virtuelle configurée, vous vous trouvez confronté à ce
 
 ---
 
-![](../image/sdd1_01/markdown.png)
+![](../images/markdown.png)
 
 
