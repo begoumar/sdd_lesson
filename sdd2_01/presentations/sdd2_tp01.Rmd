@@ -10,7 +10,6 @@ fontsize: 9pt
 ---
 
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 SciViews::R
@@ -22,22 +21,26 @@ SciViews::R
 
 3. Rappels des fondamentaux de R Studio
 
-### SciViews box 2018 & ces outils 
+
+### SciViews Box 2018 & ses outils 
 
 Cette année, vous êtes amené à travailler avec la nouvelle SciViews Box 2018. 
 
 - <http://biodatascience-course.sciviews.org/sdd-umons/decouverte-des-outils.html>
 
-
  - <http://biodatascience-course.sciviews.org/sdd-umons/svbox.html>
+
  
-### De la SciViews box 2017 à la SciViews box 2018
+### De la SciViews Box 2017 à la SciViews Box 2018
 
-- Transférer vos données provenant de la Sciviews box 2017 vers la SciViews box 2018. 
+- Installez la SciViews Box 2018.
 
-- Supprimer la SciViews box 2017
+- Transférez vos données provenant de la SciViews Box 2017 vers la SciViews Box 2018. 
 
-### R Studio
+- Supprimer la SciViews Box 2017.
+
+
+### RStudio
 
 Cette année, vous êtes amené à travailler à nouveau avec
 
@@ -48,10 +51,3 @@ Cette année, vous êtes amené à travailler à nouveau avec
 - Projet dans RStudio
 
 - Chemin relatif 
-
-
-
-
-
-
-
