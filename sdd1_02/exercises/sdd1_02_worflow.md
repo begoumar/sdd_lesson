@@ -2,7 +2,7 @@
 
 ## Objectif de l'activité 
 
-Créer un tableau récapitulatif montrant les avantages et les désavantages de l'utilisation d'un workflow classique et un approche R et R Markdown.
+Créez un tableau récapitulatif montrant les avantages et les désavantages de l'utilisation d'un workflow classique et une approche R et R Markdown.
 
 
 ## Biométrie humaine
@@ -14,19 +14,26 @@ Vous avez à votre disposition 4 jeux de données portant sur la biométrie huma
 - `biometry_2016_ew`
 - `biometry_2016`
 
+Placez ces jeux de données dans le dossier shared de votre ordinateur.
+
 ### `biometry_2014_ew`
 
-- Utilisez ce jeu de données afin de réaliser un graphique de type nuage de point
+- Utilisez ce jeu de données afin de réaliser un graphique de type nuage de point dans Excell.
 
-- Incomporez ce graphique dans un rapport sous Microsoft Word. Structurez votre rapport avec les différentes sections de la rédaction scientifique.
+- Incorporez ce graphique dans un rapport sous Microsoft Word. Structurez votre rapport avec les différentes sections de la rédaction scientifique.
 
 
 ### `biometry_2014`
 
+Créez un nouveau projet dans R Studio afin de réaliser cette comparaison.
+
+Appelez le `biometry`.
+
+Structurez votre projet avec des sous-dossiers.
+
 - Utilisez un fichier R Markdown afin de réaliser un rapport contenant les différentes sections propre à la rédaction scientifique. Utilisez un projet pour organiser votre analyse.
 
 - Incorporez-y un graphique de type nuage de point dans la partie résultats.
-
 
 ###`biometry_2016_ew`
 
@@ -34,11 +41,9 @@ Les chercheurs travaillant sur la biométrie humaine ont continué à acquérir 
 
 - Actualisez votre rapport sous Microsoft Word avec le nouveau tableau de données.
 
-
 ### `biometry_2016`
 
 - Actualisez votre rapport sous R Markdown avec le nouveau jeu de données.
-
 
 ## Comparaison des méthodes
 
@@ -52,4 +57,4 @@ A la suite de vos analyses, répondez aux questions suivantes pour cadrer votre 
 
 - Quel format d'analyse vous semble le plus simple et le plus approprié dans le cadre de la collaboration de plusieurs personnes pour rédiger un rapport ? 
 
-Utilisez un fichier Markdown (.md) pour y consigner vos réponses aux questions.
+Utilisez un fichier Markdown (.md) pour y consigner vos réponses aux questions et placez le dans votre rapport projet RStudio.

@@ -21,17 +21,17 @@ SciViews::R
 
 ___
 
-- Trouvez une application permettant d'écrire des équations mathématiques
+- Trouvez une application permettant d'écrire des équations mathématiques. Ensuite, entrez-y l'équation chimique suivante :
 
 $$2H_2 + O_2 \xrightarrow{n,m}2H_2O$$
 
 ___
 
-- Trouvez une application permettant de visualiser et récupérer des caractères spéciaux
+- Trouvez une application permettant de visualiser et récupérer des caractères spéciaux.
 
 ___
 
-- Trouvez une application permettant de visualiser l'occupation de l'espace sur le disque 
+- Trouvez une application permettant de visualiser l'occupation de l'espace sur le disque.
     + Quel dossier occupe le plus de place sur le disque `box2018a` ? 
     + Au sein de ce dossier, quel sous-dossier occupe le plus de place ?
     + Au sein de ce second dossier, quel sous-dossier occupe le plus de place ? 
@@ -42,18 +42,18 @@ ___
 
 > **Je découvre les applications présentes dans la SciViews Box 2018.**
 
-- Sauvegardez votre fichier dans le dossier document avec le nom suivant `dossier_partage.txt`
+- Sauvegardez votre fichier dans le dossier `~/Documents` avec le nom suivant `test.txt`
 
 ___
 
-- Recherchez votre fichier `dossier_partage.txt` dans votre ordinateur hôte (Windows, MacOS, ...) et notez la position du fichier.
+- Recherchez votre fichier `test.txt` dans votre ordinateur hôte (Windows, MacOS, ...) et notez la position du fichier.
 
 ___
 
-- Déplacez le fichier `dossier_partage.txt` sur le bureau de la machine virtuelle.
+- Déplacez le fichier `test.txt` sur le bureau de la machine virtuelle.
 
 - Déplacez à nouveau ce fichier, cette fois-ci dans le sous-dossier `projects` du dossier `shared`. Qu'observez vous ? 
 
 ___
 
-- Recherchez à nouveau votre fichier `dossier_partage.txt` à partir de votre ordinateur hôte et notez la position du fichier.
+- Recherchez à nouveau votre fichier `test.txt` à partir de votre ordinateur hôte et notez la position du fichier.
