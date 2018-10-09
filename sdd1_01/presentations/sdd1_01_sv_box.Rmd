@@ -15,7 +15,7 @@ SciViews::R
 ```
 
 
-### Découverte du logiciel R
+### Découverte dde la SciViews Box 2018
 
 ![](../images/desktop.png)
 
