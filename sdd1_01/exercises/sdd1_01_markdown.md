@@ -4,7 +4,7 @@
 
 Une fois votre machine virtuelle configurée, vous vous trouvez confronté à cet écran.
 
-![](../images/rstudio.png)
+![](http://hosting.umons.ac.be/html/s807/sdd/sdd01_01/rstudio.png)
 
 
 - Ajoutez le titre principal ^[Ajout d'une dièse devant le titre] 
@@ -14,4 +14,4 @@ Une fois votre machine virtuelle configurée, vous vous trouvez confronté à ce
 
 ---
 
-![](../images/markdown.png)
+![](http://hosting.umons.ac.be/html/s807/sdd/sdd01_01/markdown.png)

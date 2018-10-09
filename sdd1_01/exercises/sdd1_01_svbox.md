@@ -4,18 +4,18 @@
 
 Une fois votre machine virtuelle configurée, vous vous trouvez face à cet écran. 
 
-![](../images/desktop.png)
+![](http://hosting.umons.ac.be/html/s807/sdd/sdd01_01/desktop.png)
 
 Découvrez ce nouvel environnement de travail et répondez aux questions suivantes : 
 
-- Citez une application permettant d'écrire des équations mathématiques^[Vous devez allez dans l'onglet `Applications` puis `EqualX` ![](../images/equalx.gif)]
+- Citez une application permettant d'écrire des équations mathématiques^[Vous devez allez dans l'onglet `Applications` puis `EqualX` ![](http://hosting.umons.ac.be/html/s807/sdd/sdd01_01/equalx.gif)]
 
 
 $$2H_2 + O_2 \xrightarrow{n,m}2H_2O$$
 
-- Trouvez une application permettant d'écrire des charactères spéciaux^[Vous devez aller dans l'onglet `Applications` puis l'onglet dans la menu `Accessoires`, pour sélectionner `Characters` ou `Character Map` ![](../images/characters.gif)]
+- Trouvez une application permettant d'écrire des charactères spéciaux^[Vous devez aller dans l'onglet `Applications` puis l'onglet dans la menu `Accessoires`, pour sélectionner `Characters` ou `Character Map` ![](http://hosting.umons.ac.be/html/s807/sdd/sdd01_01/characters.gif)]
 
-- Trouvez une application permettant de visualiser l'occupation de l'espace sur le disque ^[Vous devez aller dans l'onglet `Applications` puis dans la menu `System`, pour sélectionner `Disk Usage Analyzer` ![](../images/disk.gif)]
+- Trouvez une application permettant de visualiser l'occupation de l'espace sur le disque ^[Vous devez aller dans l'onglet `Applications` puis dans la menu `System`, pour sélectionner `Disk Usage Analyzer` ![](http://hosting.umons.ac.be/html/s807/sdd/sdd01_01/disk.gif)]
 
 - Entrez dans le disque `box 2018a`
     + Quels dossier occupe le plus de place sur le disque ? ^[usr]

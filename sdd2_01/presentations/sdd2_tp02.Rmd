@@ -1,7 +1,7 @@
 ---
 title: 'Science des données II : tp2'
 subtitle:  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/biodatascience.png}
-  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/SciViews-logo.pdf} \vfill Découverte de la SciViews Box 2018
+  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/SciViews-logo.pdf} \vfill Git & GitHub \vfill Matrice de distance
 author: Guyliann Engels & Philippe Grosjean
 institute: Université de Mons, Belgique\break Laboratoire d'Écologie numérique des Milieux aquatiques\break \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/EcoNum-logo.pdf} \break \url{http://biodatascience-course.sciviews.org} \break \url{sdd@sciviews.org}
 date: ''
@@ -131,7 +131,16 @@ ggplot(fr, aes(long, lat, group = group)) +
   coord_quickmap()
 ```
 
-
 \endcol
 \endcols
 
+___ 
+
+Employez la fonction `vegdist()` du package `vegan` afin de calculer vos matrices de distances sur les données proposées :
+
+- marphy
+- marbio
+
+Employez un indice cohérent en fonction des données proposées.
+
+N'oubliez pas que les transformations mathématiques sont toujours intéressantes pour 
