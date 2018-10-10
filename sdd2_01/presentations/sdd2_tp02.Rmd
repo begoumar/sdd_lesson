@@ -9,16 +9,15 @@ fontfamily: mathpazo
 fontsize: 9pt
 ---
 
-
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 SciViews::R
 ```
 
+
 ### Git et GitHub
 
-La gestion de version est un outil indispensable dans votre recherche
+La gestion de version est un outil indispensable dans votre recherche.
 
 La présentation se trouve dans : 
 
@@ -27,10 +26,10 @@ La présentation se trouve dans :
 
 \vfill
 
-**Les mots essentiels** sont :
+**Les termes essentiels** sont :
 
-\begincols
-\begincol{.32\textwidth}
+\columnsbegin
+\columnsmall
 
 - Git 
 
@@ -38,9 +37,7 @@ La présentation se trouve dans :
 
 - GitHub Desktop
 
-\endcol
-\begincol{.32\textwidth}
-
+\columnlarge
 
 - Commit
 
@@ -54,23 +51,25 @@ La présentation se trouve dans :
 
 - Merge
 
-\endcol
-\endcols
+\columnsend
+
 
 ### Analyse multivariée : matrice de distance
 
-En partant d'un tableau de type Espèce/Station, quelles sont les stations les plus similaires ? Ce type de questions nécessite l'utilisation d'outils liés à l'analyse multivariée. 
+En partant d'un tableau de type espèce/station, quelles sont les stations les plus similaires ? Ce type de questions nécessite l'utilisation d'outils liés à l'analyse multivariée. 
 
 ```{r}
-exo <- data.frame(espece_1 = c(5, 2, 0, 0),
-                        espece_2 = c(0, 2, 0, 3),
-                        espece_3 = c(0, 3, 1, 4),
-                        espece_4 = c(2, 0, 10, 3), row.names =  paste0("station_", 1:4))
-knitr:: kable (exo)
-
+exo <- data.frame(
+  espece_1 = c(5, 2, 0, 0),
+  espece_2 = c(0, 2, 0, 3),
+  espece_3 = c(0, 3, 1, 4),
+  espece_4 = c(2, 0, 10, 3),
+  row.names =  paste0("station_", 1:4))
+knitr::kable(exo)
 ```
 
 Le point de départ de nombreuses analyses multivariées est **la matrice de distance**.  
+
 
 ### Les différents indices 
 
@@ -91,7 +90,7 @@ Ces deux indices sont à privilégier lors de **mesures environnementales**
 
 ### Calcul de matrices de distances 
 
-Calculez les matrices de dissimilarité entre les stations suivantes avec la distance euclidienne et l'indice de Bray-Curtis 
+Calculez les matrices de dissimilarité entre les stations suivantes avec la distance euclidienne et l'indice de Bray-Curtis.
 
 ```{r}
 knitr::kable(exo)
@@ -99,10 +98,11 @@ knitr::kable(exo)
 
 Quels sont les deux stations les plus proches ? Selon Bray-Curtis ? Selon la distance euclidienne ?
 
+
 ### Marphy & Marbio
 
-\begincols
-\begincol{.32\textwidth}
+\columnsbegin
+\columnsmall
 
 **Transect entre Nice et Calvi** 
 
@@ -113,33 +113,37 @@ Quels sont les deux stations les plus proches ? Selon Bray-Curtis ? Selon la dis
     + **Marphy** comprend les mesures de température, de salinité, de fluorescence et de densité.
     + **Marbio** comprend le dénombrement de différents groupes au sein du zooplancton.
     
-Les données se trouvent dans le package `pastecs`
+Les données se trouvent dans le package R `pastecs`
 
-**Réaliser un projet afin d'étudier ce transect**
+**Réaliser un projet afin d'étudier ce transect.**
 
-\endcol
-\begincol{.64\textwidth}
+\columnlarge
 
-```{r, out.width= '95%', fig.align='center'}
+```{r, out.width='95%', fig.align='center'}
 library(tidyverse)
 library(cowplot)
 fr <- map_data("france")
 ggplot(fr, aes(long, lat, group = group)) +
   geom_polygon(fill= "white", color = "black") +
-  geom_segment(aes(y = 43.7 , x = 7.25, yend = 42.56, xend= 8.75, color = "red"), size = 1, show.legend = FALSE) +
-  theme(axis.line = element_blank(), axis.title = element_blank(),axis.text = element_blank(), axis.ticks = element_blank()) +
+  geom_segment(aes(y = 43.7 , x = 7.25, yend = 42.56, xend= 8.75,
+    color = "red"), size = 1, show.legend = FALSE) +
+  theme(axis.line = element_blank(), axis.title = element_blank(),
+    axis.text = element_blank(), axis.ticks = element_blank()) +
   coord_quickmap()
 ```
 
-\endcol
-\endcols
+\columnsend
 
 ___ 
 
+<<<<<<< HEAD
 Employez la fonction **`vegdist()`** du package **`vegan`** afin de calculer vos matrices de distances sur les données proposées :
+=======
+Employez la fonction `vegdist()` du package R `vegan` afin de calculer vos matrices de distances sur les données proposées :
+>>>>>>> 6411cc6d9ebb1f489f0efa14d98e081d664cfefc
 
-- marphy
-- marbio
+- `marphy`
+- `marbio`
 
 Pour faire appel à l'aide de la fonction, il suffit d'écrire cette dernière précédé d'un point d'interrogation (**`?vegdist`**) dans la console R. Employez un indice cohérent en fonction des données proposées.
 
@@ -147,3 +151,7 @@ Pour faire appel à l'aide de la fonction, il suffit d'écrire cette dernière p
 
 
 
+<<<<<<< HEAD
+=======
+N'oubliez pas que les transformations mathématiques sont toujours intéressantes pour donner un impact relatif variable entre espèces abondantes et rares. 
+>>>>>>> 6411cc6d9ebb1f489f0efa14d98e081d664cfefc

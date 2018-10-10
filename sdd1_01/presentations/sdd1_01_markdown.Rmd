@@ -39,23 +39,25 @@ ___
 ___
 
 
-- Ajoutez un titre de niveau plus bas 
-    +  Ecrivez : *Seriatopora hystrix* Dana (1846)
+- Ajoutez un élément de liste intitulé 'mise en italique' 
+    +  Ecrivez ensuite : *Seriatopora hystrix* Dana (1846)
 
-Attention, respectez la mise en italique 
+Attention, respectez la mise en italique.
 
 ___
 
-- Ajoutez l'équation ci-dessous dans votre document
+- Ajoutez un autre élément de liste intitulé 'équation mathématique'. Ensuite, entrez l'équation ci-dessous dans votre document :
 
 $$E = MC^2$$
 
-- Ajoutez un tableau comprennant les avantages et inconvénients du language Markdown
+___
+
+- Ajoutez un troisième élément de liste intitulé 'tableau', puis ajoutez un tableau indiquant les avantages et inconvénients du langage Markdown.
 
 ___
 
 #### Astuces
 
-- `EqualX` permet d'écrire facilement des équations complexes qu'il suffit de copier-coller dans le document Markdown/
+- `EqualX` permet d'écrire facilement des équations complexes qu'il suffit de copier-coller dans le document Markdown.
 
-- `Table Editor` permet d'écrire facilement des tableau en Markdown. 
+- `Table Editor` permet d'écrire facilement des tableau dans différents formats, dont Markdown. 
