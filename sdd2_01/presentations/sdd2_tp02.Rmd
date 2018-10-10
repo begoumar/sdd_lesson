@@ -136,22 +136,14 @@ ggplot(fr, aes(long, lat, group = group)) +
 
 ___ 
 
-<<<<<<< HEAD
+
 Employez la fonction **`vegdist()`** du package **`vegan`** afin de calculer vos matrices de distances sur les données proposées :
-=======
-Employez la fonction `vegdist()` du package R `vegan` afin de calculer vos matrices de distances sur les données proposées :
->>>>>>> 6411cc6d9ebb1f489f0efa14d98e081d664cfefc
+
 
 - `marphy`
 - `marbio`
 
 Pour faire appel à l'aide de la fonction, il suffit d'écrire cette dernière précédé d'un point d'interrogation (**`?vegdist`**) dans la console R. Employez un indice cohérent en fonction des données proposées.
 
-
-
-
-
-<<<<<<< HEAD
-=======
 N'oubliez pas que les transformations mathématiques sont toujours intéressantes pour donner un impact relatif variable entre espèces abondantes et rares. 
->>>>>>> 6411cc6d9ebb1f489f0efa14d98e081d664cfefc
+

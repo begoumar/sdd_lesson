@@ -61,8 +61,8 @@ abline(h = 2, col = "red")
 
 ### Transect : Marphy & Marbio
 
-\begincols
-\begincol{.32\textwidth}
+\columnsbegin
+\columnsmall
 
 **Transect entre Nice et Calvi** 
 
@@ -73,8 +73,8 @@ abline(h = 2, col = "red")
  
  - Employez la fonction **`plot()`** pour afficher votre classification
 
-\endcol
-\begincol{.64\textwidth}
+
+\columnlarge
 
 ```{r, out.width= '95%', fig.align='center'}
 library(tidyverse)
@@ -87,13 +87,14 @@ ggplot(fr, aes(long, lat, group = group)) +
   coord_quickmap()
 ```
 
-\endcol
-\endcols
+\columnsend
 
 ___ 
 
-\begincols
-\begincol{.32\textwidth}
+
+\columnsbegin
+\columnsmall
+
 
 **Consignes**
 
@@ -104,8 +105,7 @@ ___
 
 - Employer la méthode des liens complets
 
-\endcol
-\begincol{.64\textwidth}
+\columnlarge
 
 
 ```{r}
@@ -117,13 +117,12 @@ hclust(marphy_dst, method = "complete") ->complete
 plot(complete)
 ```
 
-\endcol
-\endcols
+\columnsend
 
 ___
 
-\begincols
-\begincol{.32\textwidth}
+\columnsbegin
+\columnsmall
 
 **Consignes**
 
@@ -135,8 +134,7 @@ ___
 - Employer différents indices et différents types de lien pour obtenir la meilleure classification selon vous.
 
 
-\endcol
-\begincol{.64\textwidth}
+\columnlarge
 
 
 ```{r, echo = TRUE}
@@ -145,8 +143,7 @@ abline(h = 0.48, col = "red", lty = "solid",
        lwd = 2)
 ```
 
-\endcol
-\endcols
+\columnsend
 
 ### Classification hiérarchique : procédure
 
