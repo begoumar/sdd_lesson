@@ -178,6 +178,9 @@ polio %>% mutate(Mois = c(1:168)) -> polio
 plot(polio$Mois, polio$Cases, type = "l", xlab = "Mois", ylab = "Cases")
 ```
 
+
+* Jeu de données : polio.csv
+
 ### Les séries spatio-temporelles
 
  Diagramme décisionnel 
