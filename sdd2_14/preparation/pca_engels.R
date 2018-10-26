@@ -45,6 +45,7 @@ screeplot(marphy_acp)
 plot(marphy_acp, which = "load", choices = 1:2)
 plot(marphy_acp, which = "scores", choices = 1:2)
 
+
 # Marbio ####
 
 marbio <- read("marbio", package = "pastecs")
@@ -52,5 +53,11 @@ marbio <- read("marbio", package = "pastecs")
 marbio_acp <- pcomp(marbio, scale = TRUE)
 summary(marbio_acp, loadings = FALSE)
 screeplot(marbio_acp)
-plot(marbio_acp, which = "load", choices = 1:2)
-plot(marbio_acp, which = "scores",  choices = 1:2)
+plot(marbio_acp, which = "load", choices = 1:2, cex = 0.7)
+plot(marbio_acp, which = "scores",  choices = 1:2, cex = 0.7)
+
+
+DF %>.%
+  mutate(., VAR.res = VAR - ave(VAR, FACTOR)) -> DF2
+
+.hm
