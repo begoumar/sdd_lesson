@@ -1,5 +1,5 @@
 ---
-title: 'Science des données II : tp4'
+title: 'Science des données II : tp5'
 subtitle:  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/biodatascience.png}
   \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/SciViews-logo.pdf} \vfill Anova à 2 facteurs 
 author: Guyliann Engels & Philippe Grosjean
