@@ -7,7 +7,7 @@ output:
     theme: flatly
 ---
 
-```{r setup, echo=FALSE, message=FALSE}
+```{r setup, echo=FALSE, message=FALSE, results='hide'}
 SciViews::R
 iframe <- function(file, width = 800, height = 600)
   glue::glue('<iframe src="http://hosting.umons.ac.be/html/s807/sdd/sdd1_02/{file}" width="{width}" height="{height}" style="border:none;"></iframe>')
