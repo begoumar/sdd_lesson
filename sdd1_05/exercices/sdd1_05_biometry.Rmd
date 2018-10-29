@@ -2,10 +2,12 @@
 title: "Remaniement de données - biométrie"
 author: "Guyliann Engels & Philippe Grosjean"
 date: "29/10/2018"
-output: 
+output:
   html_document: 
     highlight: kate
     theme: flatly
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, echo=FALSE, message=FALSE}
