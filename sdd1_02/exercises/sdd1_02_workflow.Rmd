@@ -1,7 +1,9 @@
 ---
 title: "Workflow ‘classique’ en biologie (Microsoft Excel et Word) comparé à R et R Markdown"
 author: "Guyliann Engels & Philippe Grosjean"
-output: 
+output:
+  md_document:
+    variant: markdown_github
   html_document: 
     highlight: kate
     theme: flatly
