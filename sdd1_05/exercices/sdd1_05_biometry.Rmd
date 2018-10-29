@@ -1,0 +1,53 @@
+---
+title: "Remaniement de données - biométrie"
+author: "Guyliann Engels & Philippe Grosjean"
+date: "29/10/2018"
+output: 
+  html_document: 
+    highlight: kate
+    theme: flatly
+---
+
+```{r setup, echo=FALSE, message=FALSE}
+SciViews::R
+iframe <- function(file, width = 800, height = 600)
+  glue::glue('<iframe src="http://hosting.umons.ac.be/html/s807/sdd/sdd1_02/{file}" width="{width}" height="{height}" style="border:none;"></iframe>')
+```
+
+Exercice du cours de [Science des Données Biologiques I de l'Université de Mons, module 05](http://biodatascience-course.sciviews.org/sdd-umons/import.html).
+
+![](../../template/biodatascience.png)
+
+
+## Objectif
+
+- Vous exercer à la manipulation des données sur le jeu de données `biometry`.
+
+
+## Procédure
+
+Reprenez votre projet sur l'étude du zooplancton et complétez votre rapport, ou ouvrez un document R Markdown séparé pour répondre aux challenges suivants. Utilisez la version *complètement* francisée du jeu de données, importé à l'aide de l'instruction :
+
+```{r}
+(biometry <- read("biometry", package = "BioDataScience", lang = "FR"))
+```
+
+A chaque fois, utiliser un chainage des opérations lorsque cela se justifie et prenez soin à écrire un code **clair**, **lisible**, et qui utilise les fonctions *ad hoc* de manière optimale (recherchez une solution concise et efficace).
+
+## Procédure
+
+- Sur base de la variable portant sur la date de naissance (day_birth) et la variable portant sur l'année de la mesure (year_measure), tenter d'obtenir l'age des individus lors de la prise de mesure. Vos résultats doivent donc être identique avec la variable exprimant l'age des individus (Age)
+
+- Calculer l'IMC dans la population étudiée et créez une variable afin d'y associer l'interprétation fournie par l'OMS. 
+
+|IMC (kg/m2) | Interprétation (selon l’OMS)                         |
+|:----------------|:-----------------------------------------------:|
+|Inférieur 18.5   | Sous-poids (en anglais `underweight`)           |
+|Entre 18.5 et 25 | Corpulence normale (en anglais `normal weight`) |
+|Entre 25 et 30   | Surpoids (en anglais `overweight`)              |
+|Supérieur à 30   | Obésité (en anglais `obese`)                    |
+
+Dénombrez le nombre d'homme et de femme dans chacune de ces catégories. Présentez ce tableau correctement dans le document R Markdown (formattage et légende du tableau). Choississez ensuite le graphique le plus adapté et ajoutez lui une légende pour représenter graphiquement votre tableau. 
+
+- Séparez votre jeu de données en deux sur base de l'âge des individus. Justifier votre séparation à l'aide du graphique le plus adéquats. Ajoutez une variable à votre jeu de données pour renseigner cette distinction. Vérifiez si vos groupes ont une abondance similaire et Décrivez la situation à l'aide d'un tableau. 
+
