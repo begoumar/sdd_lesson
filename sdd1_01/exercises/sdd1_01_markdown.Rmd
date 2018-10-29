@@ -2,6 +2,8 @@
 title: "Découverte du langage Markdown"
 author: "Guyliann Engels & Philippe Grosjean"
 output: 
+  md_document:
+    variant: markdown_github
   html_document: 
     highlight: kate
     theme: flatly

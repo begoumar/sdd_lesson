@@ -2,6 +2,8 @@
 title: "Remaniement de données - zooplancton"
 author: "Philippe Grosjean & Guyliann Engels"
 output: 
+  md_document:
+    variant: markdown_github
   html_document: 
     highlight: kate
     theme: flatly
