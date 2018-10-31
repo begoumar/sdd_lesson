@@ -21,8 +21,6 @@ SciViews::R
 
 2. Décomposition de séries
 
-3. Régularisation de séries
-
 ### La Schizophrénie
 
 Un test d'activité cérébrale est réalisé sur un patient quotidiennement durant 120 jours. Au jour 60, les médécins lui prescrivent le médicament. 
@@ -139,53 +137,3 @@ knitr::include_graphics("../images/australie.jpg")
 ```
 
 * jeu de données : demographie.txt
-
-### Transect de Nice à Calvi
-
-Les chercheurs souhaitent visualiser  la variation des paramètres physico-chimiques le long  du transect
-
-```{r, echo= FALSE, message=FALSE, out.width= '40%', fig.align='center'}
-library(tidyverse)
-library(cowplot)
-fr <- map_data("france")
-ggplot(fr, aes(long, lat, group = group)) +
-  geom_polygon(fill= "white", color = "black") +
-  geom_segment(aes(y = 43.7 , x = 7.25, yend = 42.56, xend= 8.75, color = "red"), size = 1, show.legend = FALSE) +
-  theme(axis.line = element_blank(), axis.title = element_blank(),axis.text = element_blank(), axis.ticks = element_blank()) +
-  coord_quickmap()
-```
-
-* Jeu de données : marphy2.csv
-
-
-### Poliomyélite
-
-
-```{r, echo=FALSE, message=FALSE}
-library(readr)
-polio <- read_csv("../data/polio.txt")
-#View(polio)
-#?polio
-#head(polio)
-# variable
-#library(glarma)
-#data(Polio)
-#?Polio
-# insérer une variable Mois dans df. polio
-library(dplyr)
-polio %>% mutate(Mois = c(1:168)) -> polio
-# Choisir la méthode régularisation (par valeur constante, linéaire ...)
-plot(polio$Mois, polio$Cases, type = "l", xlab = "Mois", ylab = "Cases")
-```
-
-
-* Jeu de données : polio.csv
-
-### Les séries spatio-temporelles
-
- Diagramme décisionnel 
-
-```{r,fig.align='center', echo=FALSE, out.width= '85%'}
-knitr::include_graphics("../images/ts.png")
-```
-
