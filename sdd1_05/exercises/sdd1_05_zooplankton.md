@@ -1,12 +1,4 @@
-    ## ── Conflicts ─────────────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter()                  masks stats::filter()
-    ## ✖ dplyr::lag()                     masks stats::lag()
-    ## ✖ chart::scale_color_continuous()  masks ggplot2::scale_color_continuous()
-    ## ✖ chart::scale_colour_continuous() masks ggplot2::scale_colour_continuous()
-    ## ✖ chart::scale_fill_continuous()   masks ggplot2::scale_fill_continuous()
-    ## ✖ dplyr::select()                  masks MASS::select()
-
-Exercice du cours de [Science des Données Biologiques I de l'Université de Mons, module 05](http://biodatascience-course.sciviews.org/sdd-umons/import.html).
+Challenge relatif au cours de [Science des Données Biologiques I de l'Université de Mons, module 05](http://biodatascience-course.sciviews.org/sdd-umons/import.html).
 
 ![](../../template/biodatascience.png)
 
@@ -41,7 +33,7 @@ Reprenez votre projet sur l'étude du zooplancton et complétez votre rapport, o
     ## #   aspect <dbl>, elongation <dbl>, compactness <dbl>, transparency <dbl>,
     ## #   circularity <dbl>, density <dbl>, class <fct>
 
-A chaque fois, utiliser un chainage des opérations lorsque cela se justifie et prenez soin à écrire un code **clair**, **lisible**, et qui utilise les fonctions *ad hoc* de manière optimale (recherchez une solution concise et efficace).
+A chaque fois, utiliser un chainage des opérations lorsque cela se justifie et prenez soin d'écrire un code **clair**, **lisible**, et qui utilise les fonctions *ad hoc* de manière optimale (recherchez une solution concise et efficace).
 
 -   Calculez le logarithme en base 10 de la taille sur base de la surface occupée par la particule (`area`)
 
@@ -51,15 +43,15 @@ A chaque fois, utiliser un chainage des opérations lorsque cela se justifie et 
 
 -   Quelle est la classe qui contient le plus d'individus dont le `mode` est égal au `max` ?
 
--   Séparez les données en deux sous-tableaux : les organismes sombres et opaques et les organismes transparents après avoir montré qu'il existe bel et bien deux catégories bien distinctes. Basez-vous sur le `mode` (niveau de gris le plus fréquent dans la particule).
+-   Séparez les données en deux sous-tableaux : les organismes opaques et les organismes transparents après avoir montré qu'il existe bel et bien deux catégories bien distinctes. Basez-vous sur le `mode` (niveau de gris le plus fréquent dans la particule).
 
 -   Récupérez un sous-tableau ne contenant que les arthropodes non copépodes dans `zoo_a`.
 
--   Réduisez le nombre de niveaux à ceux présents dans le tableau `zoo_a` pour la variable `class`. Remarque : il existe un fonction spécialisée pour ce travail. Etes-vous capable de la trouver par vous-même ?
+-   Réduisez le nombre de niveaux à ceux présents dans le tableau `zoo_a` pour la variable `class`.
 
 -   Utilisez les fonctions avancées de `select()` pour récupérer toutes les variables relatives aux niveaux de gris `mean`, `mode`, `min`, `max`, `std_dev` & `range`) + la `class`e dans `zoo_a` et rien d'autre.
 
--   Faites un tableau général qui résume la moyenne, et la médiane pour `mode`, `min` et `max` par classe depuis `zoo_a`. N'oubliez pas d'y ajouter également le nombre d'observations. Présentez ce tableau correctement dans le document R Markdown (formattage et légende du tableau).
+-   Faites un tableau général qui résume la moyenne et la médiane pour `mode`, `min` et `max` par classe depuis `zoo_a`. N'oubliez pas d'y ajouter également le nombre d'observations. Présentez ce tableau correctement dans le document R Markdown (formattage et légende du tableau).
 
 -   Depuis le tableau complet `zoo`, quelle est la classe la plus représentée dans les 25% plus gros individus du zooplancton (sur base de l'`ecd`, "equivalent circular diameter" comme bonne mesure de la taille générale) ? Suggestion : utilisez la fonction `quantile()` pour déterminer la valeur du troisième quartile.
 
