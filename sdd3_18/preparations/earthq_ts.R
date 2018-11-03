@@ -55,6 +55,10 @@ par(mfrow = c(1,1))
 
 # Find a bug
 library(data.io)
-trend <- trend.test(earthq.ts, R = 999)
+
+earthq2.ts <- as.matrix(earthq.ts)
+tsp(earthq2.ts) <- tsp(earthq.ts)
+class(earthq2.ts) <- c("mts", "ts")
+trend <- trend.test(earthq2.ts, R = 999)
 plot(trend)
 trend$p.value
