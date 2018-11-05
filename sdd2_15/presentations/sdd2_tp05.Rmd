@@ -43,6 +43,7 @@ Variables :
 \columnsend
 
 ### Croissance des choux
+Le jeu de données portant sur la croissance des choix se nomme `cabbages` dans le package `MASS`
 
 \columnsbegin
 \columnlarge
