@@ -2,13 +2,17 @@ SciViews::R
 
 ## Import data
 
-cabbages <- read("cabbages", package = "MASS", lang = "fr")
-
+cabbages <- read("cabbages", package = "MASS")
+#data("cabbages")
 .?cabbages
 skimr::skim(cabbages)
 
 cabbages %>.%
-  rename(., cultivar = Cult, date = Date, head_wt = HeadWt, vit_c = VitC) -> cabbages
+  rename(., cultivar = Cult, date = Date,
+         head_wt = HeadWt, vit_c = VitC) -> cabbages
+
+chart(cabbages, formula = head_wt ~ cultivar) +
+  geom_boxplot()
 
 ## Add labels and units
 cabbages <- labelise(cabbages, self = FALSE,
@@ -23,6 +27,9 @@ cabbages <- labelise(cabbages, self = FALSE,
                          head_wt = "kg",
                          vit_c = NA),
                        as_labelled = as_labelled)
+
+chart(cabbages, head_wt ~ cultivar) +
+  geom_boxplot()
 
 # Anova 2 factors ---
 anova(anova. <- lm(data = cabbages, head_wt ~ cultivar * date))

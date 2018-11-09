@@ -37,9 +37,8 @@ eucalyptus %>.%
 
 ## write data in rds file ---
 getOption("read_write") # choose the best format to save data
-?readr::write_rds # I choose rds and i compress with xz
-write(x = eucalyptus, file = "sdd2_15/data/eucalyptus.rds" ,
-      type = "rds", compress = "xz")
+# ?readr::write_rds # I choose rds and i compress with xz
+# write(x = eucalyptus, file = "sdd2_15/data/eucalyptus.rds" , type = "rds", compress = "xz")
 
 ## import rds
 rm(eucalyptus)
