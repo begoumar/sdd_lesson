@@ -72,15 +72,19 @@ Chaque correcteur doit :
 
 ### Le projet 
 
-Créez un fichier au format txt pour répondre à la question suivante : 
+Créez un fichier au format markdown que vous allez nommer "review.md" pour répondre à la question suivante : 
 
 - Est-ce que le projet comprend un ensemble de sous-dossiers cohérent (R, analysis,...) ? 
+
+Ajoutez y vos commentaires globaux sur le travail 
 
 ### Le rapport
 
 Les corrections dans le rapport se font à l'aide d'un block quote, dont la syntaxe se trouve la section Pandoc's Markdown, directement dans le rapport (dans les zones de texte et non dans les chunks).
 
-<https://github.com/rstudio/cheatsheets/blob/master/rmarkdown-2.0.pdf >
+Il est également autorisé de barer le texte avec des doubles tildes.
+
+<https://github.com/rstudio/cheatsheets/blob/master/rmarkdown-2.0.pdf>
 
 **Ne corrigez pas la discussion et la conclusion (les rapports ne sont pas terminés)**
 
