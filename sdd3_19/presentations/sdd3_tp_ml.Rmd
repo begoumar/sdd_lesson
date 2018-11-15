@@ -40,3 +40,12 @@ knitr::include_graphics("../images/plancton.png")
 ```
 
 * Jeu de données : **plankton_set.csv**
+
+### Les organismes planctoniques de la baie de Calvi
+
+Le jeu de données mis à votre disposition est le jeu de données :
+
+
+- **plancton_calvi.csv** 
+
+Il est plus important que le premier et comprend plus de 10000 observations
