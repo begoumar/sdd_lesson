@@ -50,7 +50,7 @@ Un bon nom d'article doit contenir :
 
 - Nom du premier auteur
 
-- Mot clés permettant de connaitre le thème de l'article 
+- Mot-clés permettant de connaitre le thème de l'article 
 
 \columnsend
 
@@ -66,7 +66,7 @@ La structuration d'un tableau de données n'est pas toujours évidente. Il est c
 
 - Git et Github 
 
-Les outils les plus performants alliant la gestion de gestion de versions et la collaboration  via l'URL suivant : 
+Les outils les plus performants alliant la gestion de versions et la collaboration  via l'URL suivant : 
 
 <http://biodatascience-course.sciviews.org/sdd-umons/decouverte-des-outils.html#gestionnaire-de-version>
 
