@@ -40,9 +40,13 @@ getOption("read_write") # choose the best format to save data
 # ?readr::write_rds # I choose rds and i compress with xz
 # write(x = eucalyptus, file = "sdd2_15/data/eucalyptus.rds" , type = "rds", compress = "xz")
 
-## import rds
+
+
+## import rds ------
 rm(eucalyptus)
 eucalyptus <- read(file = "sdd2_15/data/eucalyptus.rds") ## You must be specify type read$rds
+
+# Régressio multiple ------
 
 ## correlation
 correlation(eucalyptus[, 2:3], use = "complete.obs", method = "pearson")
@@ -141,3 +145,17 @@ lm3 %>% qplot(.fitted, sqrt(abs(.stdresid)), data = .) +
 
 ## AIC ----
 AIC(lm1, lm2, lm3) ### check the smallest values
+
+
+# ANCOVA ----
+
+anova(anova. <- lm(data = eucalyptus, height ~ bloc*circumference))
+anova(anova. <- lm(data = eucalyptus, height ~ bloc + circumference))
+
+summary(anovaComp. <- confint(multcomp::glht(anova.,
+  linfct = multcomp::mcp(bloc = "Tukey")))) # Add a second factor if you want
+.oma <- par(oma = c(0, 5.1, 0, 0)); plot(anovaComp.); par(.oma); rm(.oma)
+
+
+
+m_comp <- lm(height ~ bloc -1 + bloc:circumference, data = eucalyptus)
