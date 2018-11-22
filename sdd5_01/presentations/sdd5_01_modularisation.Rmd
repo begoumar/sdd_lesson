@@ -51,3 +51,45 @@ Extraire les instructions volumineuses dans des scripts et récupérés à l'aid
 #### Exercice
 
 Sur base du document Markdown fourni, extrayez le code volumineux dans un script R.
+
+
+### Fonctions
+
+- Les fonctions sont, dans R, les briques de construction de base.
+
+- La règle\ : "si des instructions sont réutilisées plus de deux fois, il faut les transformer en fontion."
+
+
+#### Exercice
+
+Transformation de mois (1, 2, 3, ..., 12) en trimestres (1, 2, 3, ou 4). Ecrivez le code qui fait ce calcul et transformez-le en fonction.
+
+
+### Optimisation
+
+- Dans les fonctions plus encore que dans les chunks, il est important que le code soit **optimisé**
+    + Code plus clair, plus concis, **plus lisible**
+    + Code **plus rapide** (vérifiez avec `bench::mark()` + menu `Profile)
+    + Code utilisant **moins de mémoire** (`pryr::mem_used()`)
+    + Les **tests** sont utiles pour vérifier que la fonction effectuent bien le travail voulu
+
+La référence\ : [Advanced R](http://adv-r.had.co.nz) par Hadley Wickham, section "performant code".
+
+
+#### Exercice
+
+Optimisez le code de la fonction `trimester()`. Comparez et discutez des différentes solutions que vous aurez obtenues.
+
+
+### Simulation
+
+Les simulations, basées sur la générations de nombres pseudo-aléatoires dans R, sont très utiles pour tester des idées en statistique. Le mieux est de voir en pratique avec un petit exemple simple.
+
+#### Exercice
+
+Considérez le jet d'une pièce de monnaie en l'air. Répondez à la question suivante\ : à quelle vitesse obtient-on en moyenne FPP ou FPF\ ? Est-ce la même valeur\ ?
+
+
+### Application
+
+Optimisez votre Notebook en écrivant des fonctions là où c'est utile.
