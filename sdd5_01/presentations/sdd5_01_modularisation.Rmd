@@ -83,7 +83,7 @@ Optimisez le code de la fonction `trimester()`. Comparez et discutez des différ
 
 ### Simulation
 
-Les simulations, basées sur la générations de nombres pseudo-aléatoires dans R, sont très utiles pour tester des idées en statistique. Le mieux est de voir en pratique avec un petit exemple simple.
+Les simulations, basées sur la génération de nombres pseudo-aléatoires dans R, sont très utiles pour tester des idées en statistique. Le mieux est de voir en pratique avec un petit exemple simple.
 
 #### Exercice
 
