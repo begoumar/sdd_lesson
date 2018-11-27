@@ -8,6 +8,9 @@ test <- data.io::read("sdd3_19/data/plankton_set.csv")
 
 test$Class <- as.factor(test$Class)
 
+test <- as.data.frame(test)
+# ADL simple
+
 n <- nrow(test)
 n_learning <- round(n * 2/3)
 set.seed(164)
@@ -46,3 +49,35 @@ acc_test
 
 # Taux d'erreur
 100 - acc_test
+
+
+# adl avec matrice de confusion-----------------------------------------------------
+
+plankton_lda2 <- mlLda(Class ~ ., data = test)
+plankton_lda_conf2 <- confusion(cvpredict(plankton_lda2, cv.k = 10), test$Class)
+plankton_lda_conf2
+summary(plankton_lda_conf2)
+
+# LVQ  ---------------------------------------
+# k.nn = nombre de proches voisins
+plankton_lvq <- mlLvq(Class ~ ., data = test, k.nn = 3)
+plankton_lvq_conf <- confusion(cvpredict(plankton_lvq, cv.k = 10), test$Class)
+plankton_lvq_conf
+summary(plankton_lvq_conf)
+
+
+plankton_rf <- mlRforest(Class ~ ., data = test)
+plankton_rf_conf <- confusion(cvpredict(plankton_rf, cv.k = 10), test$Class)
+plankton_rf_conf
+summary(plankton_rf_conf)
+# Ici, la matrice de confusion obtenue à l'aide des données d'apprentissage
+# montre bien le biais:
+confusion(predict(plankton_rf), test$Class)
+
+plot(plankton_rf)
+
+# Réseau de neurones avec iris -------------------------------------------------
+plankton_nnet <- mlNnet(Class ~ ., data = test)
+plankton_nnet_conf <- confusion(cvpredict(plankton_nnet, cv.k = 10), test$Class)
+plankton_nnet_conf
+summary(plankton_nnet_conf)

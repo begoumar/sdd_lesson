@@ -1,0 +1,87 @@
+---
+title: "Régression non-linéaire"
+output: html_notebook
+---
+
+```{r setup}
+SciViews::R
+```
+
+# Vitesse de réaction
+
+```{r}
+sp <- read("../data/speed_reaction.rds")
+fm1 <- nls(speed ~ SSmicmen(conc, Vm, K), data = sp)
+summary(fm1)
+sp %>.%
+  chart(data = ., speed ~ conc)+
+  geom_point() +
+  geom_line(f_aes(predict(fm1) ~ conc))
+```
+
+# Herbicides
+
+```{r}
+algae <- read("../data/algae.xlsx") 
+
+chart(data = algae, vol ~ log(conc+1)) +
+  geom_point() 
+
+
+reg <- nls(vol ~ SSlogis(log(conc+1), Asym, xmid, scal), data = algae,
+    trace = TRUE)
+summary(reg)
+
+reg1 <- nls(vol ~ SSfpl(log(conc+1), A, B,xmid, scal), data = algae,
+    trace = TRUE)
+summary(reg)
+
+algae %>.%
+  chart(data = ., vol ~ log(conc+1))+
+  geom_point() +
+  geom_line(f_aes(predict(reg) ~ log(conc+1)), color = "red") + 
+  geom_line(f_aes(predict(reg1) ~ log(conc+1)), color = "blue")
+
+AIC(reg, reg1)
+
+algae %>.%
+  chart(data = ., vol ~ log(conc+1))+
+  geom_point() +
+  geom_line(f_aes(predict(reg) ~ log(conc+1)), color = "red")
+```
+
+## Croissance de poacées
+
+```{r}
+ryegrass <- read("../data/ryegrass.csv")
+#View(ryegrass)
+
+ryegrass %>.%
+  chart(data = ., rootl ~ log(conc+1)) +
+  geom_point()
+
+reg <- nls(rootl ~ SSlogis(log(conc+1), Asym, xmid, scal), data = ryegrass,
+    trace = TRUE)
+summary(reg)
+
+# plot(rootl ~ log(conc+1), data = ryegrass)
+# lines(log(ryegrass$conc+1), predict(reg))
+
+reg1 <- nls(rootl ~ SSfpl(log(conc+1), A, B,xmid, scal), data = ryegrass,
+    trace = TRUE)
+summary(reg)
+
+ryegrass %>.%
+  chart(data = ., rootl ~ log(conc+1)) +
+  geom_point() +
+  geom_line(f_aes(predict(reg)~ log(conc + 1)), color = "red") +
+  geom_line(f_aes(predict(reg1)~ log(conc + 1)), color = "blue")
+
+AIC(reg, reg1)
+
+ryegrass %>.%
+  chart(data = ., rootl ~ log(conc+1)) +
+  geom_point() +
+  geom_line(f_aes(predict(reg1)~ log(conc + 1)), color = "blue")
+```
+

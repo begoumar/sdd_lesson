@@ -32,9 +32,9 @@ ovoini%>.%
 ovo_glm <- glm(prop ~ conc, family = binomial(link = "logit"), weights = nombre, data = ovoini)
 summary(ovo_glm)
 
-plot(ovo1$conc,ovo1$prop)
-lines(ovo1$conc,predict(ovo_glm,type="response"), col="red")
+plot(ovoini$conc,ovoini$prop)
+lines(ovoini$conc,predict(ovo_glm,type="response"), col="red")
 
-ggplot(ovo1, mapping = aes( x = conc, y = prop)) +
+ggplot(ovoini, mapping = aes( x = conc, y = prop)) +
   geom_point() +
   geom_line(mapping = aes( x =  conc , y = predict(ovo_glm,type="response")) )
