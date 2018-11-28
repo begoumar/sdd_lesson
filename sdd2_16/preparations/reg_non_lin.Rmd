@@ -85,3 +85,67 @@ ryegrass %>.%
   geom_line(f_aes(predict(reg1)~ log(conc + 1)), color = "blue")
 ```
 
+## Croissance bactérienne
+
+```{r}
+growth <- read("../data/growth_curve.tsv")
+
+growth %>.%
+  chart(., growth_log ~ time) +
+  geom_point()
+
+reg_logis <- nls(growth_log ~ SSlogis(time, Asym, xmid, scal), data = growth, trace = TRUE)
+summary(reg_logis)
+reg_fpl <- nls(growth_log ~ SSfpl(time, A, B,xmid, scal), data = growth,
+            trace = TRUE)
+summary(reg_fpl)
+reg_asymp <- nls(growth_log ~ SSasymp(time, Asym, R0, lrc), data = growth, trace = TRUE)
+summary(reg_asymp)
+reg_gomp <- nls(growth_log ~ SSgompertz(time, Asym, b2, b3), data = growth, trace = TRUE)
+summary(reg_gomp)
+
+CPCOLS <- c("#1f78b4", "#33a02c", "#e31a1c", "#FF7F00")
+
+growth %>.%
+  chart(., growth_log ~ time) +
+  geom_point() +
+  geom_line(f_aes(predict(reg_logis) ~ time), colour = CPCOLS[1]) +
+  geom_line(f_aes(predict(reg_fpl) ~ time), colour = CPCOLS[2]) +
+  geom_line(f_aes(predict(reg_asymp) ~ time), colour = CPCOLS[3]) +
+  geom_line(f_aes(predict(reg_gomp) ~ time), colour = CPCOLS[4]) 
+
+AIC(reg_logis, reg_fpl, reg_gomp, reg_asymp)
+
+growth %>.%
+  chart(., growth_log ~ time) +
+  geom_point() +
+  geom_line(f_aes(predict(reg_fpl) ~ time), colour = CPCOLS[2])  
+```
+
+## Croissance du tambour rouge
+
+```{r}
+reddrum <- read("reddrum", package = "UsingR")
+
+reddrum %>.%
+  chart(., length ~ age) +
+  geom_point()
+
+reg_asymp <- nls(length ~ SSasymp(age, Asym, R0, lrc), data = reddrum, trace = TRUE)
+summary(reg_asymp)
+reg_asymp_orig <- nls(length ~ SSasympOrig(age, Asym, lrc), data = reddrum,
+                     trace = TRUE)
+summary(reg_asymp_orig)
+
+reddrum %>.%
+  chart(., length ~ age) +
+  geom_point() +
+  geom_line(f_aes(predict(reg_asymp) ~ age), colour = CPCOLS[1]) +
+  geom_line(f_aes(predict(reg_asymp_orig) ~ age), colour = CPCOLS[2])
+
+AIC(reg_asymp, reg_asymp_orig) 
+
+```
+
+
+

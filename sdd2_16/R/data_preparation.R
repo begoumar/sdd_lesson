@@ -28,3 +28,13 @@ write(algae, file ="sdd2_16/data/algae.xlsx", type = "xlsx")
 
 ryegrass <- read(file = "sdd2_16/data/raw/ryegrass.csv")
 write(ryegrass, file ="sdd2_16/data/ryegrass.csv", type = "csv")
+
+
+# Croissance_bacterie -----------------------------------------------------
+
+growthcurve <- read("sdd2_16/data/raw/croissance_bacterie.csv")
+
+growthcurve <- rename(growthcurve, time = t,
+                      growth_log = LOG10N)
+
+write(growthcurve, file = "sdd2_16/data/growth_curve.tsv", type = "tsv")

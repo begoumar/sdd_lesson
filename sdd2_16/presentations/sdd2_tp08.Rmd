@@ -63,3 +63,24 @@ read("../data/ryegrass.csv") %>.%
 ```
 
 Le jeu de données se nomme : **ryegrass.csv**
+
+### Croissance bactérienne
+
+Modélisez la croissance de ces bactéries.
+
+```{r, fig.align='center', out.width='60%'}
+read("../data/growth_curve.tsv") %>.%
+  chart(data = ., growth_log ~ time) +
+  geom_point()
+```
+
+###  Croissance du tambour rouge
+
+Modélisez la croissance de *Sciaenops ocellatus*
+
+```{r, fig.align='center', out.width='60%'}
+read("reddrum", package = "UsingR") %>.%
+  chart(., length ~ age) +
+  geom_point()
+```
+
