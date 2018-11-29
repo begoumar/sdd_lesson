@@ -159,3 +159,16 @@ summary(anovaComp. <- confint(multcomp::glht(anova.,
 
 
 m_comp <- lm(height ~ bloc -1 + bloc:circumference, data = eucalyptus)
+summary(m_comp)
+
+anova(m_comp <- lm(height ~ bloc * circumference, data = eucalyptus))
+anova(m_comp <- lm(height ~ bloc + circumference + bloc:circumference, data = eucalyptus))
+
+anova(m_comp <- lm(height ~ bloc + bloc:circumference, data = eucalyptus))
+anova(m_comp <- lm(height ~ bloc + circumference, data = eucalyptus))
+
+model<-update(m_comp, ~. - bloc:circumference)
+
+summary(m_comp)
+summary(model)
+plot(m_comp)
