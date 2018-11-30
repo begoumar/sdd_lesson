@@ -74,6 +74,8 @@ read("../data/growth_curve.tsv") %>.%
   geom_point()
 ```
 
+Le jeu de données se nomme : **growth_curve.tsv**
+
 ###  Croissance du tambour rouge
 
 Modélisez la croissance de *Sciaenops ocellatus*
@@ -84,3 +86,4 @@ read("reddrum", package = "UsingR") %>.%
   geom_point()
 ```
 
+Le jeu de données se nomme **reddrum** dans le package "UsingR"
