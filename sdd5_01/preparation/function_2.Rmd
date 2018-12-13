@@ -1,0 +1,123 @@
+---
+title: "Faire des fonctions pour représenter des graphiques"
+output: html_notebook
+---
+
+```{r setup}
+SciViews::R
+pc <- read("../data/physico.rds")
+```
+
+```{r}
+plot(data = pc, S~date, type = "n", ylim = range(pc$S)) +
+  lines(data = filter(pc, code == "Contrôle"), S~date, type = "l", col = "green") +
+  lines(data = filter(pc, code == "Hyposalin"), S~date, type = "l", col = "blue") +
+  lines(data = filter(pc, code == "Hypersalin"), S~date, type = "l", col = "red") 
+```
+
+# Réalisation de fonction graphique : plot_by_factor()
+
+```{r}
+plot(data = pc, S~ number_day, type = "n")
+lev <- levels(pc$code)
+if(length(lev) < 1) 
+  stop("No levels for 'code'")
+cols <- c("black", "red", "blue")
+cols <- rep(cols, length.out = length(lev))
+
+for(i in 1:length(lev)){
+  lines(data = filter(pc, code == lev[i]), S~number_day, type = "l", col = cols[i])
+}
+legend(32, 34.5, legend =lev, col = cols, lty = 1)
+```
+
+Réalisons une fonction s'appellant plot_by_factor()
+
+```{r}
+plot_by_factor <- function(data, formula , factor, legend.position = "right", cols, lty = 1){
+  plot(data = data, formula,  type = "n")
+lev <- levels(factor)
+if(length(lev) < 1) 
+  stop("No levels for 'factor'")
+
+cols <- rep(cols, length.out = length(lev))
+
+for(i in 1:length(lev)){
+  lines(data = filter(data, factor == lev[i]), formula, type = "l", col = cols[i], lty = lty)
+}
+legend(legend.position, legend =lev, col = cols, lty = lty)
+}
+
+plot_by_factor(data = pc, formula = S ~ number_day, factor = pc$code, legend.position = "right", cols = c("black", "red", "blue"), lty = 1)
+
+plot_by_factor(data = pc, formula = T ~ number_day, factor = pc$code, legend.position = "right", cols = c("black", "red", "blue"), lty = 3)
+
+plot_by_factor(data = pc, formula = ph ~ number_day, factor = pc$code, legend.position = "right", cols = c("black", "red", "blue"), lty = 2)
+```
+
+Ajoutez des paramètres via les ...
+
+```{r}
+plot_by_factor1 <- function(data, formula , factor, legend.position = "right", cols, lty = 1, ...){
+  plot(data = data, formula,  type = "n")
+lev <- levels(factor)
+if(length(lev) < 1) 
+  stop("No levels for 'factor'")
+
+cols <- rep(cols, length.out = length(lev))
+
+for(i in 1:length(lev)){
+  lines(data = filter(data, factor == lev[i]), formula, type = "l", col = cols[i], lty = lty, ...)
+}
+legend(legend.position, legend =lev, col = cols, lty = lty, ...)
+}
+
+plot_by_factor1(data = pc, formula = S ~ number_day, factor = pc$code, legend.position = "right", cols = c("black", "red", "blue"), lty = 1, lwd = 3)
+```
+
+La réalisation du premier graphique est très simple et rapide lorsque ggplot est employé
+
+```{r}
+# ou bien en chart
+chart(pc, S ~ date %col=%code) +
+  geom_line()
+```
+
+# Réalisation d'une fonction concat_round()
+
+Autre usage du ...
+
+```{r}
+concat_round <- function( ... , .digits = 1L){
+  #transform into à list
+  args <- list(...)
+  # check if the list is 
+  if(length(args) < 1)
+    return(character(0))
+  
+  # transform rounded numbers into characters for each arg
+  for(i in 1:length(args)){
+    if (is.numeric(args[[i]]))
+      args[[i]] <- as.character(round(args[[i]], digits = .digits))
+  }
+  # transform into a vector
+  unlist(args)
+}
+#concat_round()
+concat_round(x = "a", "z", "e", digits = 2.456, .digits = 2L)
+
+```
+
+La position de ... est différent dans cette seconde fonction par rapport à la fontion précédente. Dans la première fonction, les paramètres sont donné dans un ordre précis de ce fait on ne doit pas specifier l'arguement étant donnée que la fonction connait la liste
+
+```{r}
+plot_by_factor1(pc,S ~ number_day, pc$code, legend.position = "right", cols = c("black", "red", "blue"), lty = 1, lwd = 3)
+```
+
+# La programmation fonctionnel
+
+il faut tenter de modifier le moins possible l'environnement externe de la fonction. 
+Par exemple si l'on modifie les marges sur un graphique et que notre graphique échoue, les marges seront toujours modifiées. Une fonction qui permet de renvoyer vers l'environement avant modification, avec on.exit()
+
+
+

@@ -1,0 +1,60 @@
+---
+title: "Intégration de fonction et écriture d'autres fonctions"
+output: html_notebook
+---
+
+On déplace les fonctions vers un script R que l'on va "sourcer" dans nos autres scripts ou Rmd.
+
+```{r setup}
+SciViews::R
+##
+source("R/function.R")
+```
+
+
+
+```{r data}
+month <- data_frame(month = sample(1:12, size = 74, replace = TRUE))
+
+month %>.%
+  mutate(., trimester = trimester2(month)) -> month
+
+#month %>%
+#  mutate(trimester = trimester2(month)) -> month
+
+#month$trimester <- trimester2(month$month)
+```
+
+# Création de fonctions
+
+## Moyenne et du cv
+
+- Ecriture d'une fonction donnant la moyenne et le cv.
+- Transfère des fonctions dans un r script
+- Utilisation des fonction dans un rmd
+
+```{r}
+x <- 1:10
+x[9] <- NA
+
+y <- 1:10
+
+mean(y)
+mean(x, na.rm = TRUE)
+
+cv(x)
+cv(y)
+
+
+cv1(x)
+cv1(y)
+
+cv2(x)
+cv2(x, na.rm = TRUE)
+cv2(y)
+
+
+```
+
+
+
