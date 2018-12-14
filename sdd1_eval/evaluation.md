@@ -34,7 +34,7 @@ Consignes pratiques par projet
 
 ### sdd1\_biometry
 
-Le projet portant sur la biomeérie doit donc contenir un ensemble de fichiers lié à l'analyse de la biométrie humaine (données obtenues via vos mesures personnelles).
+Le projet portant sur la biomérie doit donc contenir un ensemble de fichiers lié à l'analyse de la biométrie humaine (données obtenues via vos mesures personnelles).
 
 -   Un R script pour préparer vos données provenant du web et les sauvegarder en local.
 -   Un fichier Rmd décrivant votre analyse comprennant
@@ -102,14 +102,14 @@ Le projet portant sur l'analyse du zooplancton doit donc contenir :
         -   partie statistique des données (utilisation de un ou plusieurs tests statistiques adaptés sur votre question de recheche) sur les copépodes
     -   Discussion & Conclusion : Confrontation de vos analyses avec la bibliographie sur le sujet.
 
-Une analyse descriptive sur l'ensemble des données suivi d'une analyse plus précise sur "Poecilostomatoid", "Calanoid", "Cyclopoid", "Harpacticoid". Vous pouvez structurer votre analyse en deux fichiers.
+Une analyse descriptive sur l'ensemble des données suivie d'une analyse plus précise sur "Poecilostomatoid", "Calanoid", "Cyclopoid", "Harpacticoid". Vous pouvez structurer votre analyse en deux fichiers.
 
 Remarques générales
 -------------------
 
 ### Choix des graphiques, des tableaux et des test statistiques
 
-L'ensemble des tests statistiques et des graphiques vu dans ce cours de SDD1, ne doivent pas se trouver dans chaque graphique. Vous devez avoir un regard critique sur vos analyses afin de proposer les graphiques, les tableaux et les analyses les plus pertinentes.
+L'ensemble des tests statistiques et des graphiques vus dans ce cours de SDD1, ne doivent pas se trouver dans chaque rapport. Vous devez avoir un regard critique sur vos analyses afin de proposer les graphiques, les tableaux et les analyses les plus pertinents en fonction des quesrtions posées.
 
 ### Le blog
 
