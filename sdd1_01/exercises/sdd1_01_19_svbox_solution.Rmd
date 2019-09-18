@@ -61,7 +61,7 @@ La SciViews box 2019 comprend encore une multitude d'applications. N'hésitez pa
 
 ## Exercice 2
 
-Lancez l'application `Mousepad` (un éditeur de texte simple). Vous pouvez y accéder également depuis le menu système `Applications`, à partir des favoris, ou de la section `Accessories`. Vous pouvez également y accéder depuis le **dock** qui se trouve en bas de la fenêtre de la SciViews Box^[Vous noterez que le dock se replie automatiquement lorsqu'une fenêtre le recouvre, mais il réapparait lorsque vous placer le curseur de la souris en bas de la fenêtre. Notez aussi que les applications que vous lancez y apparaissent et leurs fenêtres sont représentée par un point coloré en dessous de l'icône pour chaque fenêtre ouverte.]. Une fois `Mousepad` ouvert, écrivez-y la phrase suivante :
+Lancez l'application `Mousepad` (un éditeur de texte simple). Vous pouvez y accéder depuis le menu système `Applications`, à partir des favoris, ou de la section `Accessories`. Vous pouvez également y accéder depuis le **dock** qui se trouve en bas de la fenêtre de la SciViews Box^[Vous noterez que le dock se replie automatiquement lorsqu'une fenêtre le recouvre, mais il réapparait lorsque vous placer le curseur de la souris en bas de la fenêtre. Notez aussi que les applications que vous lancez y apparaissent et leurs fenêtres sont représentée par un point coloré en dessous de l'icône pour chaque fenêtre ouverte.]. Une fois `Mousepad` ouvert, écrivez-y la phrase suivante :
 
 > **Je découvre un partie des applications présentes de la SciViews Box 2018.**
 
