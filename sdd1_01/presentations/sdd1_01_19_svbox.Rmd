@@ -2,7 +2,7 @@
 title: 'Découverte de la SciViews Box 2019'
 subtitle:  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/biodatascience.png}
   \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/SciViews-logo.pdf}
-author: Guyliann Engels, Raphael Conotte & Philippe Grosjean
+author: Guyliann Engels, Raphaël Conotte & Philippe Grosjean
 institute: Université de Mons, Belgique\break Laboratoire d'Écologie numérique des Milieux aquatiques\break \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/EcoNum-logo.pdf} \break \url{http://biodatascience-course.sciviews.org} \break \url{sdd@sciviews.org}
 date: ''
 fontfamily: mathpazo
@@ -23,13 +23,13 @@ Vous vous trouvez sur le bureau (*desktop*) de la machine virtuelle. Explorez la
 
 ___
 
-La SciViews Box 2019 est comme votre ordinateur hôte. Elle comprend une multitude d'applications intéressantes.
+La SciViews Box 2019 est un système complet, comme celui installé dans votre ordinateur hôte. Elle comprend une multitude d'applications intéressantes.
 
 ![](../images/svbox2019-appli1.png){width="80%"}
 
 ### Exercice 1
 
-- Trouvez une application permettant d'écrire des équations mathématiques. Ensuite, entrez-y l'équation suivante :
+- Trouvez une application permettant d'écrire des équations mathématiques. Ensuite, entrez-y l'équation suivante\ :
 
 $$E=mc^2$$
 
@@ -38,11 +38,12 @@ $$E=mc^2$$
 - Trouvez une application permettant de faire facilement des sauvegarde de vos données
 
 - Trouvez une application permettant de visualiser l'occupation de l'espace sur le disque.
-    + Quel dossier occupe le plus de place sur le disque `box2019a` ? 
+    + Quel dossier occupe le plus de place sur le disque `box2019`\ ? 
+
 
 ### Exercice 2
 
-- Employez l'application `Mousepad` pour écrire la phrase suivante :
+- Employez l'application `Mousepad` pour écrire la phrase suivante\ :
 
 > **Je découvre les applications présentes dans la SciViews Box 2019.**
 
@@ -54,9 +55,9 @@ ___
 
 ___
 
-- Déplacez le fichier `test.txt` sur le bureau de la machine virtuelle.
+- Déplacez le fichier `test.txt` sur le bureau de la machine virtuelle. Recherchez-le à nouveau dans votre ordinateur hôte.
 
-- Déplacez à nouveau ce fichier, cette fois-ci dans le sous-dossier `projects` du dossier `shared`. Qu'observez vous ? 
+- Déplacez à nouveau ce fichier, cette fois-ci dans le sous-dossier `projects` du dossier `shared`. Qu'observez vous\ ? 
 
-- Recherchez à nouveau votre fichier `test.txt` à partir de votre ordinateur hôte et notez la position du fichier.
+- Recherchez à nouveau votre fichier `test.txt` à partir de votre ordinateur hôte et notez la position du fichier (note\ : vous pouvez accéder facilement à votre dossier `shared` depuis l'ordinateur hôte via le lanceur rapide, bouton `Go to shared folder`).
 
