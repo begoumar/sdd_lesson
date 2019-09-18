@@ -35,7 +35,7 @@ $$E=mc^2$$
 
 - Trouvez une application permettant de visualiser et récupérer des caractères spéciaux.
 
-- Trouvez une application permettant de faire facilement des sauvegarde de vos données
+- Trouvez une application permettant de faire facilement des sauvegardes de vos données
 
 - Trouvez une application permettant de visualiser l'occupation de l'espace sur le disque.
     + Quel dossier occupe le plus de place sur le disque `box2019a` ? 
@@ -44,7 +44,7 @@ $$E=mc^2$$
 
 - Employez l'application `Mousepad` pour écrire la phrase suivante :
 
-> **Je découvre les applications présentes dans la SciViews Box 2019.**
+> **Je découvre une partie des applications présentes dans la SciViews Box 2019.**
 
 - Sauvegardez votre fichier dans le dossier `~/Documents` avec le nom suivant `test.txt`
 
