@@ -1,6 +1,6 @@
 # Ensemble de ressources des cours de Sciences des Données Biologiques de l'UMONS et à Charleroi
 
-Ces ressources couvrent les cours suivants\ :
+Ces ressources couvrent les cours suivants :
 
 - Science des données à l'UMONS
     + [US-B2-SCBIOL-006-M](http://applications.umons.ac.be/web/fr/pde/2019-2020/ue/US-B2-SCBIOL-006-M.htm) : Science des Données I : Visualisation et Inférence
