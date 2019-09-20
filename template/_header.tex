@@ -199,3 +199,11 @@ citecolor = umons-red, anchorcolor = umons-red}
 % Do not print slides with first level header
 \AtBeginSection[]{}
 
+% Redefine how subsection slides appear
+\AtBeginSubsection{
+  \frame{
+    \centering
+    \LARGE
+    \insertsubsection
+  }
+}
