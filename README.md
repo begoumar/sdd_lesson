@@ -15,6 +15,6 @@ Ces ressources couvrent les cours suivant :
 
 Ce dépôt comprend l'ensemble des préparations et des slides associées à chaque module d'apprentissage du livre interactif ci-dessous :
 
-- <http://biodatascience-course.sciviews.org/sdd-umons/>
+- <http://biodatascience-course.sciviews.org/sdd-umons-2018/>
 
 **Le matériel est en cours d'écriture aussi bien dans ce dépôt que dans le livre interactif**
