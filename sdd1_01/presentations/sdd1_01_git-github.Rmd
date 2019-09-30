@@ -1,12 +1,18 @@
 ---
-title: 'Science des données I : module 2'
-subtitle:  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/biodatascience.png}
-  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/SciViews-logo.pdf} \vfill Git et Github
-author: Philippe Grosjean & Guyliann Engels 
-institute: Université de Mons, Belgique\break Laboratoire d'Écologie numérique des Milieux aquatiques\break \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/EcoNum-logo.pdf} \break \url{http://biodatascience-course.sciviews.org} \break \url{sdd@sciviews.org}
+title: 'Science des données I : module 1'
+author: "Philippe Grosjean & Guyliann Engels"
 date: ''
-fontfamily: mathpazo
+output:
+  html_document:
+    df_print: paged
+institute: Université de Mons, Belgique\break Laboratoire d'Écologie numérique des
+  Milieux aquatiques\break \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/EcoNum-logo.pdf}
+  \break \url{http://biodatascience-course.sciviews.org} \break \url{sdd@sciviews.org}
 fontsize: 9pt
+subtitle: \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/biodatascience.png}
+  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/SciViews-logo.pdf}
+  \vfill Git et Github
+fontfamily: mathpazo
 ---
 
 ```{r setup, include=FALSE}
@@ -86,4 +92,4 @@ SciViews::R
 
 ### A vous de jouer !
 
-Mettez tout cela en application en réalisant votre propre site web à partir d'un fork de `BioDataScience-Course/blogdown.source`
+Mettez tout cela en application en créant votre premier dépôt Github sur base de l'assignation renseignée dans le bookdown.
