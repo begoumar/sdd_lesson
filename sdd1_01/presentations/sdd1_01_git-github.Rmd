@@ -85,7 +85,6 @@ SciViews::R
 
 \columnsend
 
-
 ### "Forker" un projet Github dans son espace et l'utiliser sur son PC
 
 ![](../images/git_flow.png)

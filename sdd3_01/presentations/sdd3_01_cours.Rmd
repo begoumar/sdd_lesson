@@ -24,16 +24,16 @@ SciViews::R
     * Les \alert{statistiques descriptives}, qui résument à l’aide de descripteurs ou présentent de manière visuelle (graphique) le contenu de jeux de données,
     * Les \alert{statistiques inférentielles}, basées sur les tests d’hypothèse pour répondre à des questions « binaires » (est-ce ceci --H~0~--, ou son contraire --H~1~-- ?)
 
-> - Au cours de **biostatistique de Ba3**, nous avons étudié diverses \alert{techniques multivariées} : exploratoires (clusters et ordination) et confirmatoires (ANOVA, régression linéaire, modèle linéaire).
+> - Au cours de **Science des Données II Ba3**, nous avons étudié diverses \alert{techniques multivariées} : exploratoires (clusters et ordination) et confirmatoires (ANOVA, régression linéaire, modèle linéaire, modèle non linéaire).
 
 \hfill
 
-> - Dans ce cours, nous aborderons diverses \alert{techniques statistiques complémentaires}\ : l'analyse de **séries spatio-temporelles**, la **classification supervisée**, et la **régression non linéaire**.
+> - Dans ce cours, nous aborderons diverses \alert{techniques statistiques complémentaires}\ : la **classification supervisée** et l'analyse de **séries spatio-temporelles**.
 
 
 ### Références
 
-\alert{Syllabus} : la matière étant plus complexe que pour les 2 cours précédent, un syllabus est disponible sous forme PDF.
+\alert{Syllabus} : la matière étant plus complexe que pour les 2 cours précédent, un syllabus est disponible sous forme PDF (ancienne version).
 
 \hfill
 
@@ -50,19 +50,17 @@ Autre références utiles :
 
 ## Les outils logiciels que nous utiliserons
 
-### R, R Studio & SciViews Box 2018
+### R, R Studio & SciViews Box 2019
 
-Comme pour les années précédentes, nous utiliserons un **système complètement configuré**, la \alert{SciViews Box}. La version 2018 avec des logiciels réactualisés est disponible. Elle contient, entre autres :
+Comme pour les années précédentes, nous utiliserons un **système complètement configuré**, la \alert{SciViews Box}. La version 2019 avec des logiciels réactualisés est disponible. Elle contient, entre autres :
 
-- **R** 3.4.4, ainsi que plus d'un millier de packages R additionnels préinstallés (snapshot de CRAN en date du 22/04/2018)
+- **R** 3.5.3, ainsi que plus de 1400 packages R additionnels préinstallés (snapshot de CRAN en date du 08/04/2019)
 
-- **R Studio server** 1.1.442 préinstallé complètement, y compris les outils additionnels requis pour compiler les fichiers R Markdown. Une grande nouveauté par rapport à la version précédente : des packages facilitant la lecture des données (`data.io`), le "workflow" (`flow`) et les graphiques (`chart`), ainsi qu'un outil de configuration simplifié de la SciViews Box. Snippets de SciViews.
+- **R Studio server** 1.2.1335 préinstallé complètement, y compris les outils additionnels requis pour compiler les fichiers R Markdown. Une grande nouveauté par rapport à la version précédente : des packages facilitant la lecture des données (`data.io`), le "workflow" (`flow`) et les graphiques (`chart`), ainsi qu'un outil de configuration simplifié de la SciViews Box. Snippets de SciViews.
 
-- **LyX** 2.2.3, customisé avec les outils SciViews pour éditer des documents contenant des chunks R.
+- **Python 3.6.7 Scientific** préinstallé avec plus de 250 packages supplémentaires. **Julia version 1.0.3** avec plus de 200 packages installés. **Jupyter** et *JupyterLab** avec des notebooks Python, Julia et R.
 
-- **Python 3.5.2 Scientific** préinstallé avec plus de 200 packages supplémentaires. **Jupyter** avec des notebooks Python 3.5.2 et R 3.4.4. **Spyder** 3.1.4, un IDE pour éditer du code et des scripts en Python.
-
-- Une série de logiciels complémentaires tels **R Commander**, **EqualX**, **Meld**, **DB Browser pour SQLite**, ...
+- Une série de logiciels complémentaires tels **R Commander**, **Adminer**, **Meld**, ...
 
 
 ### Installation et utilisation
@@ -77,4 +75,4 @@ Comme pour les années précédentes, nous utiliserons un **système complèteme
 
 #### Prise en main
 
-Vous allez maintenant configurer et découvrir cette nouvelle machine virtuelle...
+Vous allez maintenant configurer et découvrir les nouveautés de la machine virtuelle 2019...
