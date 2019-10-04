@@ -36,8 +36,8 @@ FNR
 ## Par rapport à la prédiction manuelle
 
 ## Taux de faux positifs (par colonne) pour A (en %)
-## Note: FP + FN is indeed everything less the first column
-FPR <- ((sum(matconf[, 1]) - matconf[1, 1]) / sum(matconf[, -1])) * 100
+## Note: FP + FN is indeed everything less the first line
+FPR <- ((sum(matconf[, 1]) - matconf[1, 1]) / sum(matconf[-1, ])) * 100
 FPR
 ## Par rapport à la prédiction automatique
 
