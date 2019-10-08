@@ -51,7 +51,7 @@ library(ipred)
 # k = nombre de proches voisins à considérer
 iris_knn <- ipredknn(Species ~ ., data = iris_learn, k = 3)
 iris_knn # Pas très utile : trop détaillé!
-predict(iris_knn, type = "class")
+predict(iris_knn, iris_test, type = "class")
 # Matrice de confusion obtenue par validation croisée
 # (c'est un peu plus tordu qu'avec mlearning!)
 # Problème avec l'argument k = qui correspond à errorest() et ipredknn()
@@ -64,7 +64,7 @@ predict_class <- function(object, newdata)
 # Validation croisée 10 fois (k = 10)
 iris_knn_error <- errorest(Species ~ ., data = iris, model = knn3,
   estimator = "cv", predict = predict_class,
-  est.para = control.errorest(predictions = TRUE))
+  est.para = control.errorest(k = 10, predictions = TRUE))
 iris_knn_conf <- confusion(iris_knn_error$predictions, iris$Species)
 iris_knn_conf
 plot(iris_knn_conf)
@@ -74,6 +74,7 @@ summary(iris_knn_conf)
 # LVQ sur iris ---------------------------------------
 # k.nn = nombre de proches voisins
 iris_lvq <- mlLvq(Species ~ ., data = iris, k.nn = 3)
+set.seed(54365)
 iris_lvq_conf <- confusion(cvpredict(iris_lvq, cv.k = 10), iris$Species)
 iris_lvq_conf
 plot(iris_lvq_conf)
