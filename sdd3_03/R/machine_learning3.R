@@ -21,7 +21,7 @@ predict_class <- function(object, newdata)
 # Validation croisée 10 fois (k = 10)
 iris_rpart_error <- errorest(Species ~ ., data = iris, model = rpart,
   estimator = "cv", predict = predict_class,
-  est.para = control.errorest(predictions = TRUE))
+  est.para = control.errorest(k = 10, predictions = TRUE))
 iris_rpart_conf <- confusion(iris_rpart_error$predictions, iris$Species)
 iris_rpart_conf
 plot(iris_rpart_conf)
@@ -44,6 +44,7 @@ plot(iris_rf)
 iris_rf2 <- mlRforest(Species ~ ., data = iris, ntree = 250)
 iris_rf2_conf <- confusion(cvpredict(iris_rf2, cv.k = 10), iris$Species)
 iris_rf2_conf
+plot(iris_rf2_conf)
 summary(iris_rf2_conf)
 
 
@@ -101,6 +102,5 @@ svm_kernel("polynomial")
 # Noyau sigmoidal
 svm_kernel("sigmoid")
 
-# Cela ne change pas grand chose pour un exemple aussi basique,
-# mais essayez sur d'autres jeux de données...
-# (radial est peut-être sensiblement meilleur)?
+# Cela ne change pas grand chose pour un exemple aussi basique, mais essayez sur
+# d'autres jeux de données... (radial est peut-être sensiblement meilleur)?
